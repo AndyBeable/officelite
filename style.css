@@ -73,6 +73,9 @@ body {
 
 .section-countdown-sign-up {
   margin-bottom: 5rem; }
+  @media screen and (min-width: 1200px) {
+    .section-countdown-sign-up {
+      align-self: flex-start; } }
 
 .section-countdown:before {
   content: "";
@@ -95,7 +98,7 @@ body {
   @media screen and (min-width: 1200px) {
     .section-countdown:before {
       top: 100rem;
-      height: 165vh; } }
+      height: 100vh; } }
   @media screen and (min-width: 1500px) {
     .section-countdown:before {
       top: 112rem;
@@ -184,6 +187,12 @@ body {
   @media screen and (min-width: 760px) {
     .section-form::before {
       height: 35vh; } }
+  @media screen and (min-width: 1200px) {
+    .section-form::before {
+      top: 0;
+      height: 150vh;
+      left: 80rem;
+      width: 100vw; } }
 
 .section-form {
   margin: 0 2.6rem; }
@@ -237,9 +246,15 @@ option {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  @media screen and (min-width: 1200px) {
+    .header__sign-up::before {
+      background-image: none; } }
 
 .header__sign-up {
   padding-top: 3.5rem; }
+  @media screen and (min-width: 1200px) {
+    .header__sign-up {
+      padding-top: 0; } }
 
 .header__sign__up-text-box {
   margin: 0 2.6rem;
@@ -256,6 +271,11 @@ option {
   .heading-primary-sign-up--sub {
     width: 60%;
     margin: 0 auto; } }
+
+@media screen and (min-width: 1200px) {
+  .heading-primary-sign-up--sub {
+    width: 75%;
+    margin: 0; } }
 
 .header {
   margin: 0 2.6rem;
@@ -424,9 +444,10 @@ option {
   .sign-up-container {
     margin-top: 100px;
     display: flex;
-    align-items: center; } }
+    align-items: left;
+    padding: 15rem; } }
 
 @media screen and (min-width: 1200px) {
-  .container-flex-desktop {
+  .first {
     display: flex;
     flex-direction: column; } }

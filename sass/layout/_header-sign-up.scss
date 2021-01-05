@@ -10,11 +10,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    background-image: none;
+  }
 }
 
 .header {
   &__sign-up {
     padding-top: 3.5rem;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
   }
   &__sign__up-text-box {
     margin: 0 2.6rem;
@@ -34,5 +42,11 @@
   .heading-primary-sign-up--sub {
     width: 60%;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading-primary-sign-up--sub {
+    width: 75%;
+    margin: 0;
   }
 }
