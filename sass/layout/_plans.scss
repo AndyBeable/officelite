@@ -1,0 +1,133 @@
+.section-plans {
+  margin-bottom: 5rem;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 16.5rem;
+  }
+}
+
+.plan {
+  border-radius: 1.1rem;
+  padding: 4rem 5.3rem;
+  margin: 0 2.6rem;
+
+  @media screen and (min-width: 1200px) {
+    height: 50rem;
+  }
+  @media screen and (min-width: 1300px) {
+    height: 42rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+
+  &__container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__text-container {
+    text-align: center;
+    @media screen and (min-width: 760px) {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__type--dark {
+    color: $color-dark-blue;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    @media screen and (min-width: 760px) {
+      margin-bottom: 0rem;
+    }
+  }
+  &__type--light {
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    @media screen and (min-width: 760px) {
+      margin-bottom: 0rem;
+    }
+  }
+  &__cost--dark {
+    color: $color-dark-blue;
+    font-size: 5.6rem;
+    font-weight: 700;
+  }
+  &__cost--light {
+    color: $color-white;
+    font-size: 5.6rem;
+    font-weight: 700;
+  }
+  &__user--dark {
+    color: $color-dark-blue;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 5.6rem;
+  }
+  &__user--light {
+    color: $color-white;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+  &__features {
+    list-style: none;
+    line-height: 2.5;
+    margin-bottom: 3.2rem;
+  }
+
+  &__basic {
+    background-color: $color-white;
+    color: $color-grey;
+    @media screen and (min-width: 1200px) {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+
+  &__pro {
+    background-color: $color-mid-blue;
+    color: $color-white;
+    background-image: url("/assets/home/bg-pattern-pricing.svg");
+    background-position-x: 50%;
+    background-position-y: 90%;
+    background-size: 260%;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 760px) {
+      background-position-x: 110%;
+      background-position-y: 50%;
+      background-size: 150%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: 0;
+      flex-grow: 1;
+      background-position-x: 50%;
+      background-position-y: -120%;
+    }
+  }
+
+  &__ultimate {
+    background-color: $color-white;
+    color: $color-grey;
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+}

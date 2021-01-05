@@ -1,0 +1,32 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.6;
+  color: $color-grey;
+}
+
+.heading-primary {
+  color: $color-dark-blue;
+  line-height: 48px;
+  margin-bottom: 2.4rem;
+
+  @media screen and (min-width: 760px) {
+    width: 78%;
+    font-size: 4rem;
+  }
+
+  &--sub {
+    line-height: 26px;
+    margin-bottom: 2.4rem;
+
+    @media screen and (min-width: 760px) {
+      width: 86%;
+      margin-bottom: 3.4rem;
+    }
+  }
+}
+
+.heading-primary-sign-up {
+  color: $color-dark-blue;
+  line-height: 48px;
+  margin-bottom: 2.4rem;
+}

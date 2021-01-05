@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body>
+    <div class="sign-up-container">
+      <header class="header__sign-up">
+        <div class="header__logo-box">
+          <img src="/assets/shared/logo.svg" alt="Logo" />
+        </div>
+        <div class="header__sign__up-text-box">
+          <h1 class="heading-primary-sign-up">Work smarter. Save time.</h1>
+          <p class="heading-primary-sign-up--sub">
+            Easily manage your projects. Get on the list and receive in-app
+            perks available only to early subscribers. We are moving into final
+            development and getting ready for official launch soon.
+          </p>
+        </div>
+      </header>
+
+      <section class="section-countdown-sign-up">
+        <div class="countdown__container">
+          <div class="countdown__coming-soon">
+            <p>
+              <span class="countdown__coming--dark">Coming</span>
+              <span class="countdown__date">31 Jan 2021</span>
+            </p>
+          </div>
+          <ul class="countdown__items">
+            <li class="countdown__item countdown__item--light">
+              <span id="days" class="countdown__number countdown__number-blue">
+                Days
+              </span>
+              days
+            </li>
+            <li class="countdown__item countdown__item--light">
+              <span id="hours" class="countdown__number countdown__number-blue">
+                Hours
+              </span>
+              hours
+            </li>
+            <li class="countdown__item countdown__item--light">
+              <span
+                id="minutes"
+                class="countdown__number countdown__number-blue"
+              >
+                Minutes
+              </span>
+              min
+            </li>
+            <li class="countdown__item countdown__item--light">
+              <span
+                id="seconds"
+                class="countdown__number countdown__number-blue"
+              >
+                Seconds
+              </span>
+              sec
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-form">
+        <div class="form__container">
+          <form action="#">
+            <div class="form__field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form__field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form__field">
+              <label for="pack">Options</label>
+
+              <select name="packs" id="packs">
+                <option value="basic">Basic Pack Free</option>
+                <option value="pro">Pro Pack $9.99</option>
+                <option value="ultimate">Ultimate Pack $19.99</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form__field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" required />
+            </div>
+          </form>
+          <a href="#" class="btn btn--blue">Get on the list</a>
+        </div>
+      </section>
+      <script src="/script.js"></script>
+    </div>
+  </body>
+</html>

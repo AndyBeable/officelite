@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo-box">
+          <img src="/assets/shared/logo.svg" alt="Logo" class="header__logo" />
+          <img
+            src="/assets/home/illustration-charts.svg"
+            alt="Charts"
+            class="header__charts"
+          />
+        </div>
+        <div class="header__text-box">
+          <h1 class="heading-primary">
+            A simple solution to complex tasks is coming soon
+          </h1>
+
+          <p class="heading-primary--sub">
+            Say goodbye to inefficient juggling of multiple apps, teams, and
+            projects. Officelite is the new collaboration platform built with an
+            intuitive interface to improve productivity.
+          </p>
+          <a href="/sign-up.html" class="btn btn--blue">Get Started</a>
+        </div>
+      </div>
+    </header>
+    <section class="section-plans">
+      <div class="plan__container">
+        <div class="plan plan__basic">
+          <div class="plan__text-container">
+            <div class="plan__details">
+              <div class="plan__type--dark">Basic</div>
+              <div class="plan__cost--dark">Free</div>
+              <div class="plan__user--dark">Up to 5 users for free</div>
+            </div>
+            <ul class="plan__features">
+              <li>Basic document collaboration</li>
+              <li>2 GB storage</li>
+              <li>Great security and support</li>
+            </ul>
+            <div class="plan__button-container--basic">
+              <a href="/sign-up.html" class="btn btn--light-blue">
+                Try for Free
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan__pro">
+          <div class="plan__text-container">
+            <div class="plan__details">
+              <div class="plan__type--light">Pro</div>
+              <div class="plan__cost--light">$9.99</div>
+              <div class="plan__user--light">Per user, billed monthly</div>
+            </div>
+            <ul class="plan__features">
+              <li>All essential integrations</li>
+              <li>50 GB storage</li>
+              <li>More control and insights</li>
+            </ul>
+            <div class="plan__button-container--pro">
+              <a href="/sign-up.html" class="btn btn--white">Try for Free</a>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan__ultimate">
+          <div class="plan__text-container">
+            <div class="plan__details">
+              <div class="plan__type--dark">Ultimate</div>
+              <div class="plan__cost--dark">$19.99</div>
+              <div class="plan__user--dark">Per user, billed monthly</div>
+            </div>
+            <ul class="plan__features">
+              <li>Robust work management</li>
+              <li>100 GB storage</li>
+              <li>VIP support</li>
+            </ul>
+            <div class="plan__button-container--ultimate">
+              <a href="/sign-up.html" class="btn btn--light-blue">
+                Try for Free
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-countdown">
+      <div class="countdown__container">
+        <div class="countdown__coming-soon">
+          <p>
+            <span class="countdown__coming">Coming</span>
+            <span class="countdown__date">31 Jan 2021</span>
+          </p>
+        </div>
+        <ul class="countdown__items">
+          <li class="countdown__item">
+            <span id="days" class="countdown__number">Days</span>
+            days
+          </li>
+          <li class="countdown__item">
+            <span id="hours" class="countdown__number">Hours</span>
+            hours
+          </li>
+          <li class="countdown__item">
+            <span id="minutes" class="countdown__number">Minutes</span>
+            min
+          </li>
+          <li class="countdown__item">
+            <span id="seconds" class="countdown__number">Seconds</span>
+            sec
+          </li>
+        </ul>
+      </div>
+      <div class="footer-button">
+        <a href="/sign-up.html" class="btn btn--blue btn--footer">
+          Get Started
+        </a>
+      </div>
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>

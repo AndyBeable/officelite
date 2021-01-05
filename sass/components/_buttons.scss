@@ -1,0 +1,46 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 4.5rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    border: inherit;
+    cursor: pointer;
+    box-shadow: 9px 14px 38px 0px rgba(0, 0, 0, 0.26);
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  &--blue {
+    color: $color-white;
+    background-color: $color-mid-blue;
+
+    &:hover {
+      background-color: $color-light-blue;
+    }
+  }
+
+  &--light-blue {
+    color: $color-mid-blue;
+    background-color: $color-faded-blue;
+
+    &:hover {
+      background-color: $color-faded-blue-hover;
+    }
+  }
+  &--white {
+    color: $color-mid-blue;
+    background-color: $color-white;
+
+    &:hover {
+      color: $color-light-blue;
+    }
+  }
+
+  &--footer {
+    margin: 0 auto;
+  }
+}
